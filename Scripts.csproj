@@ -54,6 +54,31 @@
     <Compile Include="Experimental\PathFinding\PathFinding.cs" />
     <Compile Include="Experimental\PathFinding\PathFindingServer_Dynamic_Load.cs" />
     <Compile Include="Experimental\PathFinding\PathFindingServer.cs" />
+    <Compile Include="JUAN\ArmorBuilderForm.cs" />
+    <Compile Include="JUAN\ArmorSorter.cs" />
+    <Compile Include="JUAN\BandagePets.cs" />
+    <Compile Include="JUAN\BunnyHealer.cs" />
+    <Compile Include="JUAN\CheckBuffs.cs" />
+    <Compile Include="JUAN\ClaimCorpses.cs" />
+    <Compile Include="JUAN\CombatWatchdog.cs" />
+    <Compile Include="JUAN\CorpseProcessor.cs" />
+    <Compile Include="JUAN\Deforestator.cs" />
+    <Compile Include="JUAN\HealPetMagery.cs" />
+    <Compile Include="JUAN\LootChest.cs" />
+    <Compile Include="JUAN\MineSpot.cs" />
+    <Compile Include="JUAN\Minoc Miner.cs" />
+    <Compile Include="JUAN\MoveAllItems.cs" />
+    <Compile Include="JUAN\MoveByName.cs" />
+    <Compile Include="JUAN\MoveByProperty.cs" />
+    <Compile Include="JUAN\Musicianship.cs" />
+    <Compile Include="JUAN\Provocator.cs" />
+    <Compile Include="JUAN\RecallMiner.cs" />
+    <Compile Include="JUAN\SharedLibrary.cs" />
+    <Compile Include="JUAN\Stealth.cs" />
+    <Compile Include="JUAN\TamerBard.cs" />
+    <Compile Include="JUAN\TamerSpellweaver.cs" />
+    <Compile Include="JUAN\Taunt.cs" />
+    <Compile Include="JUAN\WalkTest.cs" />
     <Compile Include="Scripts\BODS\Bod_Item.cs" />
     <Compile Include="Scripts\Gathering\test.cs" />
     <Compile Include="Scripts\Gathering\TreeChopper.cs" />
@@ -115,16 +140,9 @@
     <Compile Include="Test\Test.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Razor\Razor.csproj">
-      <Project>{b24e4fb1-4936-4544-9e88-f3ff9b04fdba}</Project>
-      <Name>Razor</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\UltimaSDK\Ultima.csproj">
-      <Project>{5d66ace6-b2a4-400f-b5a5-24525959ac5c}</Project>
-      <Name>Ultima</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
+    <EmbeddedResource Include="JUAN\ArmorBuilderForm.resx">
+      <DependentUpon>ArmorBuilderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -150,6 +168,23 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\Tailoring\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RazorEnh\Razor\Razor.csproj">
+      <Project>{b24e4fb1-4936-4544-9e88-f3ff9b04fdba}</Project>
+      <Name>Razor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RazorEnh\UltimaSDK\Ultima.csproj">
+      <Project>{5d66ace6-b2a4-400f-b5a5-24525959ac5c}</Project>
+      <Name>Ultima</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JUAN\autofisher%281%29.py" />
+    <Content Include="JUAN\autoLoot_Smap.py" />
+    <Content Include="JUAN\trainMagery_Smap.py" />
+    <Content Include="JUAN\train_Remove_Trap 5x5mod.py" />
+    <Content Include="JUAN\train_Remove_Trap.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
