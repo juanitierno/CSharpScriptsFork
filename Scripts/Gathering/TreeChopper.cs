@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 //#forcedebug
-//#import <../Libs/stored_data.cs>
+
 
 namespace RazorEnhanced
 {
@@ -35,11 +35,11 @@ namespace RazorEnhanced
         private readonly List<int> HATCHET_IDs = new List<int> { 0x0F49, 0x1443, 0x48B2 }; // 0x48B2 Gargoyle
         private readonly List<string> INVALID_TREE_NAMES = new List<string> { "o'hii tree" };
 
-        private readonly StoredData json_storedData = new StoredData();
+        //private readonly StoredData json_storedData = new StoredData();
 
         public void Run()
         {
-            ignore_list = json_storedData.GetData<List<Tree>>("ChoppedTree",StoredData.StoreType.Character);
+            ignore_list = new List<Tree>();
             if (ignore_list == null) ignore_list = new List<Tree>();
 
             while (true)
@@ -70,7 +70,7 @@ namespace RazorEnhanced
                     ChopTheTree(ref tree);
 
                     // Update the ingore list on disk
-                    json_storedData.StoreData(ignore_list, "ChoppedTree", StoredData.StoreType.Character);
+                    //json_storedData.StoreData(ignore_list, "ChoppedTree", StoredData.StoreType.Character);
 
                     if (CheckPlayerOverloaded() == true)
                     {

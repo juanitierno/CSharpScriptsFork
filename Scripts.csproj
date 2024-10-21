@@ -54,7 +54,9 @@
     <Compile Include="Experimental\PathFinding\PathFinding.cs" />
     <Compile Include="Experimental\PathFinding\PathFindingServer_Dynamic_Load.cs" />
     <Compile Include="Experimental\PathFinding\PathFindingServer.cs" />
-    <Compile Include="JUAN\ArmorBuilderForm.cs" />
+    <Compile Include="JUAN\ArmorBuilderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="JUAN\ArmorSorter.cs" />
     <Compile Include="JUAN\BandagePets.cs" />
     <Compile Include="JUAN\BunnyHealer.cs" />
@@ -62,6 +64,7 @@
     <Compile Include="JUAN\ClaimCorpses.cs" />
     <Compile Include="JUAN\CombatWatchdog.cs" />
     <Compile Include="JUAN\CorpseProcessor.cs" />
+    <Compile Include="JUAN\ChopAround.cs" />
     <Compile Include="JUAN\Deforestator.cs" />
     <Compile Include="JUAN\HealPetMagery.cs" />
     <Compile Include="JUAN\LootChest.cs" />
